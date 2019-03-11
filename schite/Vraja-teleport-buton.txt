@@ -1,0 +1,33 @@
+#include<graphics.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+
+	int dimensiune=240;
+
+
+	initwindow(500,500,"GRAFICA TEST",getmaxwidth()/2-250,getmaxheight()/2-250);
+
+
+	setfillstyle(1,WHITE);
+	bar(0,0,500,500);
+
+	setviewport(100,100,500,500,1);
+	setfillstyle(1,GREEN);
+	bar(0,0,dimensiune,dimensiune);
+
+	setcolor(BLUE);
+	setfillstyle(1,BLUE);
+	fillellipse(18*dimensiune+2,15*dimensiune,0.49*dimensiune,0.49*dimensiune);
+	setcolor(LIGHTBLUE);
+	setfillstyle(1,LIGHTBLUE);
+	fillellipse(18*dimensiune+2,15*dimensiune,0.3*dimensiune,0.3*dimensiune);
+    	setcolor(WHITE);
+	setfillstyle(1,WHITE);
+	fillellipse(18*dimensiune+2,15*dimensiune,0.1*dimensiune,0.1*dimensiune);
+
+getch();
+}

@@ -1,0 +1,30 @@
+
+#include<graphics.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+
+	int dimensiune=30;
+
+
+	initwindow(20*dimensiune,16*dimensiune,"GRAFICA TEST",getmaxwidth()/2-250,getmaxheight()/2-250);
+
+
+    	setcolor(MAGENTA);
+	setfillstyle(1,MAGENTA);
+	fillellipse(16*dimensiune,15*dimensiune,0.49*dimensiune,0.49*dimensiune);
+	setcolor(BLUE);
+	setfillstyle(1,BLUE);
+	fillellipse(16*dimensiune,15*dimensiune,0.35*dimensiune,0.35*dimensiune);
+	setcolor(YELLOW);
+	setfillstyle(1,YELLOW);
+	fillellipse(16*dimensiune,15*dimensiune,0.2*dimensiune,0.2*dimensiune);
+	setcolor(DARKGRAY);
+	setfillstyle(1,DARKGRAY);
+	fillellipse(16*dimensiune,15*dimensiune,0.1*dimensiune,0.1*dimensiune);
+
+getch();
+}

@@ -1,0 +1,91 @@
+#include <graphics.h>
+#include <iostream.h>
+
+using namespace std;
+
+int dim=30;
+
+void scrieLOGO(int x=10*dim-50,int y=1.5*dim)
+{
+    setlinestyle(SOLID_LINE,1,3);
+    settextstyle(8,0,3);
+    setcolor(WHITE);
+    outtextxy(x+12,y,"Ruffini");
+    setcolor(RED);
+    line(x,y-20,x,y+15);
+    arc(x,y-10,270,90,11);
+    line(x,y-2,x+12,y+18);
+    setlinestyle(SOLID_LINE,1,1);
+    settextstyle(8,0,1);
+    setcolor(WHITE);
+}
+
+void infoVraja2(int x,int y)
+{
+     setcolor(RED);
+     rectangle(x,y,x+ 10*dim,y+3*dim);
+     
+
+     setcolor(WHITE);
+     settextstyle(11,0,1);
+
+     outtextxy(x+10 , y+5 , " Power Zone (     ) " );
+     setcolor(YELLOW);
+     outtextxy(x+10+textwidth(" Power Zone ( "),y+5,"W" );
+     setcolor(WHITE);
+     outtextxy(x+5 , y+25 , "Formeaza in jur un scut de protecite ");
+     outtextxy(x+5 , y+40 , "care blocheaza vraja oponentului" );
+   
+}
+
+void infoVraja1(int x,int y)
+{
+     setcolor(RED);
+     rectangle(x,y,x+ 10*dim,y+3*dim);
+     
+
+     setcolor(WHITE);
+     settextstyle(11,0,1);
+
+     outtextxy(x+10 , y+5 , " Fire Ball (     ) " );
+     setcolor(YELLOW);
+     outtextxy(x+10+textwidth(" Fire Ball ( "),y+5,"Q" );
+     setcolor(WHITE);
+     outtextxy(x+5 , y+25 , "Impinge jucatorul in spate si ii scade ");
+     outtextxy(x+5 , y+40 , "din viata in functie de cat de departe" );
+     outtextxy(x+5 , y+55 , "aruncati vraja (max 15 dmg)");
+}
+
+
+void infoVraja3(int x,int y)
+{
+     setcolor(RED);
+     rectangle(x,y,x+ 10*dim,y+3*dim);
+     
+
+     setcolor(WHITE);
+     settextstyle(11,0,1);
+
+     outtextxy(x+10 , y+5 , " Teleport (     ) " );
+     setcolor(YELLOW);
+     outtextxy(x+10+textwidth(" Teleport ( "),y+5,"E" );
+     setcolor(WHITE);
+     outtextxy(x+5 , y+25 , " Da viteza eroului spre o destinatie ");
+     outtextxy(x+5 , y+40 , " pentru o distanta limitata" );
+  
+}
+
+
+
+
+
+
+int main()
+{
+
+initwindow(15*dim,15*dim,"test",getmaxwidth()/2-10*dim,getmaxheight()/2-10*dim);
+
+    infoVraja1(dim,dim);
+    
+getch();
+}

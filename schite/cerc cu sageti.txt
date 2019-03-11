@@ -1,0 +1,56 @@
+#include<graphics.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+
+
+	int dimensiune=240;
+
+
+	initwindow(500,500,"GRAFICA TEST",getmaxwidth()/2-250,getmaxheight()/2-250);
+
+
+	setfillstyle(1,WHITE);
+	bar(0,0,500,500);
+
+	setviewport(100,100,500,500,1);
+	setfillstyle(1,GREEN);
+	bar(0,0,dimensiune,dimensiune);
+
+    setcolor(LIGHTCYAN);
+	setfillstyle(1,LIGHTCYAN);
+	fillellipse(16.5*dimensiune+1,14.5*dimensiune,0.35*dimensiune,0.35*dimensiune);
+	setcolor(RED);
+	line(16.55*dimensiune+1,15*dimensiune,17.45*dimensiune,15*dimensiune);
+	line(17*dimensiune+1,14.55*dimensiune,17*dimensiune+1,15.45*dimensiune);
+	line(16.6*dimensiune+1,14.6*dimensiune,17.4*dimensiune+1,15.4*dimensiune);
+	line(17.4*dimensiune+1,14.6*dimensiune,16.6*dimensiune+1,15.4*dimensiune);
+
+	line(16.97*dimensiune+1,14.59*dimensiune,17*dimensiune+1,14.55*dimensiune);
+	line(17.03*dimensiune+1,14.59*dimensiune,17*dimensiune+1,14.55*dimensiune);
+
+	line(16.97*dimensiune+1,15.41*dimensiune,17*dimensiune+1,15.45*dimensiune);
+	line(17*dimensiune+1,15.45*dimensiune,17.03*dimensiune+1,15,41*dimensiune);
+
+	line(16.55*dimensiune+1,15*dimensiune,16.59*dimensiune+1,14.97*dimensiune);
+    line(16.55*dimensiune+1,15*dimensiune,16.59*dimensiune+1,15.03*dimensiune);
+
+    line(17.45*dimensiune+1,15*dimensiune,17,42*dimensiune+1,15.03*dimensiune);
+    line(17.45*dimensiune+1,15*dimensiune,17.42*dimensiune+1,14.97*dimensiune);
+
+    line(16.6*dimensiun+1,14.6*dimensiune,16.62*dimensiune+1,14.66*dimensiune);
+    line(16.6*dimensiune+1,14.6*dimensiune,16.65*dimensiune+1,14.61*dimensiune);
+
+    line(17.4*dimensiune+1,14.6*dimensiune,17.38*dimensiune+1,14.67*dimensiune);
+    line(17.4*dimensiune+1,14.6*dimensiune,17.35*dimensiune+1,14.62*dimensiune);
+
+    line(16.6*dimensiune+1,15.4*dimensiune,16.62*dimensiune+1,15.35*dimensiune);
+    line(16.6*dimensiune+1,15.4*dimensiune,16.65*dimensiune+1,15.39*dimensiune);
+
+    line(17.4*dimensiune+1,15.4*dimensiune,17.34*dimensiune+1,15.38*dimensiune);
+    line(17.4*dimensiune+1,15.4*dimensiune,17.38*dimensiune+1,15.33*dimensiune);
+
+getch();
+}

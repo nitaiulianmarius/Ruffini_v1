@@ -1,0 +1,43 @@
+#include<graphics.h>
+#include<iostream>
+ struct Jucator
+{
+int x;
+int y;
+}eu;
+using namespace std;
+
+int main()
+{
+
+
+	int dimensiune=240;
+
+
+	initwindow(500,500,"GRAFICA TEST",getmaxwidth()/2-250,getmaxheight()/2-250);
+    eu.x=eu.y=0;
+
+	setfillstyle(1,WHITE);
+	bar(0,0,500,500);
+
+	setviewport(100,100,500,500,1);
+	setfillstyle(1,GREEN);
+	bar(0,0,dimensiune,dimensiune);
+
+	setfillstyle(1,YELLOW);
+	bar(eu.x+0.25*dimensiune,eu.y+0.02*dimensiune,eu.x+0.75*dimensiune,eu.y+0.5*dimensiune);
+	setfillstyle(1,LIGHTCYAN);
+	bar(eu.x+0.35*dimensiune,eu.y+0.51*dimensiune,eu.x+0.65*dimensiune,eu.y+0.85*dimensiune);
+	setfillstyle(1,MAGENTA);
+	bar(eu.x+0.35*dimensiune,eu.y+0.1*dimensiune,eu.x+0.65*dimensiune,eu.y+0.21*dimensiune);
+    bar(eu.x+0.35*dimensiune,eu.y+0.35*dimensiune,eu.x+0.65*dimensiune,eu.y+0.37*dimensiune);
+    setfillstyle(1,LIGHTRED);
+    bar(eu.x+0.16*dimensiune,eu.y+0.51*dimensiune,eu.x+0.35*dimensiune,eu.y+0.75*dimensiune);
+    bar(eu.x+0.65*dimensiune,eu.y+0.51*dimensiune,eu.x+0.84*dimensiune,eu.y+0.75*dimensiune);
+    setfillstyle(1,DARKGRAY);
+    bar(eu.x+0.2*dimensiune,eu.y+0.85*dimensiune,eu.x+0.45*dimensiune,eu.y+0.95*dimensiune);
+    bar(eu.x+0.55*dimensiune,eu.y+0.85*dimensiune,eu.x+0.8*dimensiune,eu.y+0.95*dimensiune);
+
+
+getch();
+}

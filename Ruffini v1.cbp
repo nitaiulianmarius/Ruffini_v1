@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Proiectul A" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Proiectul A" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32" />
+					<Add library="..\..\..\..\Program Files (x86)\CodeBlocksMingW\MinGW\lib\libbgi.a" />
+					<Add library="..\..\..\..\Dev-Cpp\lib\Win32-gcc\libirrKlang.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Proiectul A" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-w" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32" />
+		</Linker>
+		<Unit filename="Game.cpp" />
+		<Unit filename="bin/Debug/load/game.ruff" />
+		<Unit filename="include/Baraca.h" />
+		<Unit filename="include/Buton.h" />
+		<Unit filename="include/Calculator.h" />
+		<Unit filename="include/Functii.h" />
+		<Unit filename="include/Jucator.h" />
+		<Unit filename="include/Obiect.h" />
+		<Unit filename="include/Vraja.h" />
+		<Unit filename="include/gameEngine.h" />
+		<Unit filename="include/structEuPc.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

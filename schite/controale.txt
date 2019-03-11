@@ -1,0 +1,62 @@
+#include<graphics.h>
+#include<iostream>
+using namespace std;
+
+
+class xx
+{
+    public:
+    void LOGO(int , int);
+};
+
+void xx::LOGO(int x,int y)
+{
+
+    setlinestyle(SOLID_LINE,1,3);
+    settextstyle(8,0,3);
+    setcolor(WHITE);
+    outtextxy(x+12,y,"Ruffini");
+    setcolor(RED);
+    line(x,y-20,x,y+15);
+    arc(x,y-10,270,90,11);
+    line(x,y-2,x+12,y+18);
+    setlinestyle(SOLID_LINE,1,1);
+    settextstyle(8,0,1);
+    setcolor(WHITE);
+}
+
+int main()
+{
+
+
+	int dimensiune=30;
+	int dim=30;
+
+	initwindow(20*dimensiune,16*dimensiune,"Ruffini - Production Team",getmaxwidth()/2-10*dim,getmaxheight()/2-8*dim);
+
+
+    settextstyle(8,0,1);
+    setbkcolor(WHITE);
+    setcolor(RED);
+    outtextxy(dim,4*dim,"Selecteaza vrajitorul tau");
+    outtextxy(dim,4*dim+18,"Selecteaza vrajitorul oponent");
+    outtextxy(dim,4*dim+36,"Intoarcere la meniu");
+    outtextxy(dim,4*dim+54,"Deplasare jucator");
+    outtextxy(dim,4*dim+72,"Anulare vraja");
+    outtextxy(dim,4*dim+90,"Opreste vrajitorul(din mers)");
+
+
+    setcolor(BLACK);
+
+     outtextxy(15*dim,4*dim,"1");
+    outtextxy(15*dim,4*dim+18,"2");
+     outtextxy(15*dim,4*dim+36,"Esc");
+      outtextxy(15*dim,4*dim+54,"click dreapta");
+       outtextxy(15*dim,4*dim+72,"click dreapta");
+        outtextxy(15*dim,4*dim+90,"S");
+
+
+
+getch();
+}
+

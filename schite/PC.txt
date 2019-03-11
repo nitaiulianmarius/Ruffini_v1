@@ -1,0 +1,43 @@
+#include<graphics.h>
+#include<iostream>
+ struct robot
+{
+int x;
+int y;
+}pc;
+using namespace std;
+
+int main()
+{
+
+
+	int dimensiune=240;
+
+
+	initwindow(500,500,"GRAFICA TEST",getmaxwidth()/2-250,getmaxheight()/2-250);
+    pc.x=pc.y=0;
+
+	setfillstyle(1,WHITE);
+	bar(0,0,500,500);
+
+	setviewport(100,100,500,500,1);
+	setfillstyle(1,GREEN);
+	bar(0,0,dimensiune,dimensiune);
+
+	setfillstyle(1,BROWN);
+	bar(pc.x+0.25*dimensiune,pc.y+0.02*dimensiune,pc.x+0.75*dimensiune,pc.y+0.5*dimensiune);
+	setfillstyle(1,BLUE);
+	bar(pc.x+0.35*dimensiune,pc.y+0.51*dimensiune,pc.x+0.65*dimensiune,pc.y+0.85*dimensiune);
+	setfillstyle(1,RED);
+	bar(pc.x+0.35*dimensiune,pc.y+0.1*dimensiune,pc.x+0.65*dimensiune,pc.y+0.21*dimensiune);
+    bar(pc.x+0.35*dimensiune,pc.y+0.35*dimensiune,pc.x+0.65*dimensiune,pc.y+0.37*dimensiune);
+    setfillstyle(1,YELLOW);
+    bar(pc.x+0.16*dimensiune,pc.y+0.51*dimensiune,pc.x+0.35*dimensiune,pc.y+0.75*dimensiune);
+    bar(pc.x+0.65*dimensiune,pc.y+0.51*dimensiune,pc.x+0.84*dimensiune,pc.y+0.75*dimensiune);
+    setfillstyle(1,BLACK);
+    bar(pc.x+0.2*dimensiune,pc.y+0.85*dimensiune,pc.x+0.45*dimensiune,pc.y+0.95*dimensiune);
+    bar(pc.x+0.55*dimensiune,pc.y+0.85*dimensiune,pc.x+0.8*dimensiune,pc.y+0.95*dimensiune);
+
+
+getch();
+}
